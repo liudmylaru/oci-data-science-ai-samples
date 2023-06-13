@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: check-ocids
+        name: check-ocids
+        entry: scripts/pre-commit-hook-check-ocids.py
+        language: python
+        additional_dependencies: [click]
+        exclude_types: ['png', 'jpeg', 'gzip']
