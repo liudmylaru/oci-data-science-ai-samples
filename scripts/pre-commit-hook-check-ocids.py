@@ -2,10 +2,7 @@
 
 import sys
 import re
-import click
 
-@click.command()
-@click.argument("filenames", nargs=-1)
 def main(filenames) -> int:
   retcode = 0
   for filename in filenames:
@@ -26,4 +23,5 @@ def main(filenames) -> int:
   sys.exit(retcode)
 
 if __name__ == "__main__":
-  main()
+    filenames = sys.argv
+    main(filenames)

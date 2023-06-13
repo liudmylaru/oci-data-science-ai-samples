@@ -2,5 +2,5 @@
    name: check-ocids
    description: Check for real ocids in files
    entry: scripts/pre-commit-hook-check-ocids.py
-   language: python
+   language: script
    exclude_types: ['png', 'jpeg', 'gzip']
